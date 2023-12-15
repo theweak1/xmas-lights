@@ -255,6 +255,8 @@ def run_light_sequence():
                    time.sleep(2)
                for x in range(10):
                    snake_flow()
+        else:
+            turn_off_lights()
 
 
 try:
@@ -262,4 +264,5 @@ try:
 except KeyboardInterrupt:
     turn_off_lights()
     print("\nLEDS OFF")
+
 
